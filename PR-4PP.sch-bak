@@ -63,16 +63,16 @@ Connection ~ 4300 6050
 $Comp
 L Device:R_Small R4
 U 1 1 6167D378
-P 5300 4850
-F 0 "R4" V 5104 4850 50  0000 C CNN
-F 1 "10k" V 5195 4850 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 5300 4850 50  0001 C CNN
-F 3 "~" H 5300 4850 50  0001 C CNN
-	1    5300 4850
+P 5450 4850
+F 0 "R4" V 5254 4850 50  0000 C CNN
+F 1 "10k" V 5345 4850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 5450 4850 50  0001 C CNN
+F 3 "~" H 5450 4850 50  0001 C CNN
+	1    5450 4850
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	5200 4850 5000 4850
+	5350 4850 5000 4850
 $Comp
 L power:GND #PWR0103
 U 1 1 6167DB1E
@@ -85,7 +85,7 @@ F 3 "" H 5750 4850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5400 4850 5750 4850
+	5550 4850 5750 4850
 $Comp
 L Device:R_Small R2
 U 1 1 6167E62D
@@ -98,10 +98,10 @@ F 3 "~" H 3150 3750 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_Small R1
+L Device:R_Small R3
 U 1 1 6167ECE6
 P 2900 3850
-F 0 "R1" V 2704 3850 50  0000 C CNN
+F 0 "R3" V 2704 3850 50  0000 C CNN
 F 1 "22" V 2795 3850 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" H 2900 3850 50  0001 C CNN
 F 3 "~" H 2900 3850 50  0001 C CNN
@@ -111,10 +111,10 @@ $EndComp
 Wire Wire Line
 	3800 3750 3250 3750
 $Comp
-L Device:C_Small C7
+L Device:C_Small C3
 U 1 1 61680FED
 P 3150 4150
-F 0 "C7" H 3058 4104 50  0000 R CNN
+F 0 "C3" H 3058 4104 50  0000 R CNN
 F 1 "1uF" H 3058 4195 50  0000 R CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 3150 4150 50  0001 C CNN
 F 3 "~" H 3150 4150 50  0001 C CNN
@@ -137,10 +137,10 @@ $EndComp
 Wire Wire Line
 	3150 4250 3150 4450
 $Comp
-L Device:C_Small C1
+L Device:C_Small C4
 U 1 1 616827A2
 P 1350 5100
-F 0 "C1" H 1442 5146 50  0000 L CNN
+F 0 "C4" H 1442 5146 50  0000 L CNN
 F 1 "0.1uF" H 1442 5055 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 1350 5100 50  0001 C CNN
 F 3 "~" H 1350 5100 50  0001 C CNN
@@ -148,10 +148,10 @@ F 3 "~" H 1350 5100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C2
+L Device:C_Small C5
 U 1 1 61683F91
 P 1800 5100
-F 0 "C2" H 1892 5146 50  0000 L CNN
+F 0 "C5" H 1892 5146 50  0000 L CNN
 F 1 "0.1uF" H 1892 5055 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 1800 5100 50  0001 C CNN
 F 3 "~" H 1800 5100 50  0001 C CNN
@@ -159,10 +159,10 @@ F 3 "~" H 1800 5100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C3
+L Device:C_Small C6
 U 1 1 616845F6
 P 2250 5100
-F 0 "C3" H 2342 5146 50  0000 L CNN
+F 0 "C6" H 2342 5146 50  0000 L CNN
 F 1 "0.1uF" H 2342 5055 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 2250 5100 50  0001 C CNN
 F 3 "~" H 2250 5100 50  0001 C CNN
@@ -170,10 +170,10 @@ F 3 "~" H 2250 5100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C4
+L Device:C_Small C7
 U 1 1 61684895
 P 2700 5100
-F 0 "C4" H 2792 5146 50  0000 L CNN
+F 0 "C7" H 2792 5146 50  0000 L CNN
 F 1 "10uF" H 2792 5055 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 2700 5100 50  0001 C CNN
 F 3 "~" H 2700 5100 50  0001 C CNN
@@ -257,39 +257,27 @@ Wire Wire Line
 Wire Wire Line
 	3800 3150 3200 3150
 $Comp
-L Device:C_Small C5
+L Device:C_Small C1
 U 1 1 61689DB9
 P 2750 2850
-F 0 "C5" V 2521 2850 50  0000 C CNN
+F 0 "C1" V 2521 2850 50  0000 C CNN
 F 1 "22pF" V 2612 2850 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 2750 2850 50  0001 C CNN
 F 3 "~" H 2750 2850 50  0001 C CNN
 	1    2750 2850
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	2850 2850 2850 2950
-Wire Wire Line
-	2850 2950 3200 2950
-Connection ~ 3200 2950
 $Comp
-L Device:C_Small C6
+L Device:C_Small c2
 U 1 1 6168B87D
 P 2750 3250
-F 0 "C6" V 2521 3250 50  0000 C CNN
+F 0 "c2" V 2521 3250 50  0000 C CNN
 F 1 "22pF" V 2612 3250 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 2750 3250 50  0001 C CNN
 F 3 "~" H 2750 3250 50  0001 C CNN
 	1    2750 3250
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	2850 3250 2850 3150
-Wire Wire Line
-	2850 3150 3200 3150
-Connection ~ 3200 3150
-Wire Wire Line
-	2650 2850 2650 3250
 $Comp
 L power:GND #PWR0108
 U 1 1 61690331
@@ -301,21 +289,6 @@ F 3 "" H 2650 3400 50  0001 C CNN
 	1    2650 3400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2650 3400 2650 3250
-Connection ~ 2650 3250
-Wire Wire Line
-	2650 3400 3100 3400
-Wire Wire Line
-	3100 3050 3100 3250
-Connection ~ 2650 3400
-Wire Wire Line
-	3300 3050 3300 3250
-Wire Wire Line
-	3300 3250 3100 3250
-Connection ~ 3100 3250
-Wire Wire Line
-	3100 3250 3100 3400
 $Comp
 L Switch:SW_Push SW1
 U 1 1 61692600
@@ -345,10 +318,10 @@ Wire Wire Line
 Wire Wire Line
 	3250 2700 3050 2700
 $Comp
-L Device:R_Small R3
+L Device:R_Small R1
 U 1 1 61694BD5
 P 3750 2450
-F 0 "R3" H 3809 2496 50  0000 L CNN
+F 0 "R1" H 3809 2496 50  0000 L CNN
 F 1 "10k" H 3809 2405 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" H 3750 2450 50  0001 C CNN
 F 3 "~" H 3750 2450 50  0001 C CNN
@@ -579,4 +552,39 @@ Wire Wire Line
 Connection ~ 7400 4850
 Wire Wire Line
 	7400 4850 8300 4850
+Wire Wire Line
+	2650 3400 3100 3400
+Wire Wire Line
+	3100 3400 3100 3300
+Wire Wire Line
+	3100 3300 3300 3300
+Wire Wire Line
+	3300 3300 3300 3050
+Connection ~ 2650 3400
+Wire Wire Line
+	3100 3300 3100 3050
+Connection ~ 3100 3300
+Wire Wire Line
+	3200 3150 2850 3150
+Wire Wire Line
+	2850 3150 2850 3250
+Connection ~ 3200 3150
+Wire Wire Line
+	3200 2950 2850 2950
+Wire Wire Line
+	2850 2950 2850 2850
+Connection ~ 3200 2950
+Wire Wire Line
+	2650 2850 2650 3250
+Connection ~ 2650 3250
+Wire Wire Line
+	2650 3250 2650 3400
+Text GLabel 5000 4650 2    50   Input ~ 0
+ROW0
+Text GLabel 5000 3350 2    50   Input ~ 0
+ROW1
+Text GLabel 5000 3250 2    50   Input ~ 0
+COL0
+Text GLabel 5000 3150 2    50   Input ~ 0
+ROW1
 $EndSCHEMATC
