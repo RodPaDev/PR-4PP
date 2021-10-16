@@ -37,7 +37,7 @@ F 3 "" H 7550 2300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7550 2450 7550 2300
+	7550 2450 7550 2350
 Wire Wire Line
 	7750 2450 7650 2450
 Wire Wire Line
@@ -353,8 +353,6 @@ Wire Wire Line
 Text GLabel 5750 3850 0    50   Input ~ 0
 D-
 Wire Wire Line
-	5750 3850 6050 3850
-Wire Wire Line
 	6250 3850 7050 3850
 $Comp
 L MX_Alps_Hybrid:MX-NoLED MX1
@@ -529,18 +527,14 @@ $EndComp
 $Comp
 L power:VBUS #PWR0111
 U 1 1 6170BDF8
-P 2200 950
-F 0 "#PWR0111" H 2200 800 50  0001 C CNN
-F 1 "VBUS" H 2215 1123 50  0000 C CNN
-F 2 "" H 2200 950 50  0001 C CNN
-F 3 "" H 2200 950 50  0001 C CNN
-	1    2200 950 
+P 2250 1000
+F 0 "#PWR0111" H 2250 850 50  0001 C CNN
+F 1 "VBUS" H 2265 1173 50  0000 C CNN
+F 2 "" H 2250 1000 50  0001 C CNN
+F 3 "" H 2250 1000 50  0001 C CNN
+	1    2250 1000
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2050 1000 2200 1000
-Wire Wire Line
-	2200 1000 2200 950 
 $Comp
 L Device:R_Small R5
 U 1 1 6171101F
@@ -605,22 +599,6 @@ Wire Wire Line
 Wire Wire Line
 	1150 2650 1150 2500
 Connection ~ 1450 2650
-Text GLabel 2150 1500 2    50   Input ~ 0
-DA-
-Text GLabel 2150 1600 2    50   Input ~ 0
-DB-
-Text GLabel 2150 1700 2    50   Input ~ 0
-DA+
-Text GLabel 2150 1800 2    50   Input ~ 0
-DB+
-Wire Wire Line
-	2050 1800 2150 1800
-Wire Wire Line
-	2050 1700 2150 1700
-Wire Wire Line
-	2050 1600 2150 1600
-Wire Wire Line
-	2050 1500 2150 1500
 $Comp
 L Device:L_Core_Ferrite_Small L1
 U 1 1 6172C389
@@ -658,171 +636,191 @@ F 3 "" H 1250 3650 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1250 3700 1250 3550
-$Comp
-L random-keyboard-parts:TPD4E05U06DQAR U2
-U 1 1 6176F5DC
-P 4100 1500
-F 0 "U2" H 4075 2225 50  0000 C CNN
-F 1 "TPD4E05U06DQAR" H 4075 2134 50  0000 C CNN
-F 2 "" H 3850 1700 50  0001 C CNN
-F 3 "" H 3850 1700 50  0001 C CNN
-	1    4100 1500
-	1    0    0    -1  
-$EndComp
-Text GLabel 3550 1000 0    50   Input ~ 0
-DB+
-Text GLabel 3550 1100 0    50   Input ~ 0
-DB+
-Text GLabel 3550 1200 0    50   Input ~ 0
-DP
-Wire Wire Line
-	3550 1000 3750 1000
-Wire Wire Line
-	3550 1100 3600 1100
-Wire Wire Line
-	3550 1200 3600 1200
-Wire Wire Line
-	3600 1200 3600 1100
-Connection ~ 3600 1100
-Wire Wire Line
-	3600 1100 3750 1100
-Text GLabel 3550 1300 0    50   Input ~ 0
-DA-
-Text GLabel 3550 1400 0    50   Input ~ 0
-DA-
-Text GLabel 3550 1500 0    50   Input ~ 0
-DN
-Wire Wire Line
-	3550 1300 3750 1300
-Wire Wire Line
-	3550 1400 3600 1400
-Wire Wire Line
-	3550 1500 3600 1500
-Wire Wire Line
-	3600 1500 3600 1400
-Connection ~ 3600 1400
-Wire Wire Line
-	3600 1400 3750 1400
-Text GLabel 3550 1600 0    50   Input ~ 0
-DA+
-Text GLabel 3550 1700 0    50   Input ~ 0
-DA+
-Text GLabel 3550 1800 0    50   Input ~ 0
-DP
-Wire Wire Line
-	3550 1600 3750 1600
-Wire Wire Line
-	3550 1700 3600 1700
-Wire Wire Line
-	3550 1800 3600 1800
-Wire Wire Line
-	3600 1800 3600 1700
-Connection ~ 3600 1700
-Wire Wire Line
-	3600 1700 3750 1700
-Text GLabel 3550 1900 0    50   Input ~ 0
-DB-
-Text GLabel 3550 2000 0    50   Input ~ 0
-DB-
-Text GLabel 3550 2100 0    50   Input ~ 0
-DN
-Wire Wire Line
-	3550 1900 3750 1900
-Wire Wire Line
-	3550 2000 3600 2000
-Wire Wire Line
-	3550 2100 3600 2100
-Wire Wire Line
-	3600 2100 3600 2000
-Connection ~ 3600 2000
-Wire Wire Line
-	3600 2000 3750 2000
-$Comp
-L power:GNDPWR #PWR0116
-U 1 1 61783B2B
-P 4650 1550
-F 0 "#PWR0116" H 4650 1350 50  0001 C CNN
-F 1 "GNDPWR" H 4654 1396 50  0000 C CNN
-F 2 "" H 4650 1500 50  0001 C CNN
-F 3 "" H 4650 1500 50  0001 C CNN
-	1    4650 1550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4400 1450 4650 1450
-Wire Wire Line
-	4650 1450 4650 1550
-Wire Wire Line
-	4400 1550 4650 1550
-Connection ~ 4650 1550
-$Comp
-L Device:Polyfuse_Small F1
-U 1 1 6178F237
-P 4100 2500
-F 0 "F1" V 3895 2500 50  0000 C CNN
-F 1 "Polyfuse_Small" V 3986 2500 50  0000 C CNN
-F 2 "" H 4150 2300 50  0001 L CNN
-F 3 "~" H 4100 2500 50  0001 C CNN
-	1    4100 2500
-	0    1    1    0   
-$EndComp
-$Comp
-L power:VBUS #PWR0117
-U 1 1 6179E139
-P 3650 2450
-F 0 "#PWR0117" H 3650 2300 50  0001 C CNN
-F 1 "VBUS" H 3665 2623 50  0000 C CNN
-F 2 "" H 3650 2450 50  0001 C CNN
-F 3 "" H 3650 2450 50  0001 C CNN
-	1    3650 2450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3650 2450 3650 2500
-Wire Wire Line
-	3650 2500 4000 2500
-$Comp
-L power:VCC #PWR0118
-U 1 1 617A2075
-P 4550 2500
-F 0 "#PWR0118" H 4550 2350 50  0001 C CNN
-F 1 "VCC" H 4567 2673 50  0000 C CNN
-F 2 "" H 4550 2500 50  0001 C CNN
-F 3 "" H 4550 2500 50  0001 C CNN
-	1    4550 2500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4550 2500 4350 2500
-$Comp
-L Diode:1N630xCA D5
-U 1 1 617AB3CA
-P 4350 2800
-F 0 "D5" V 4304 2879 50  0000 L CNN
-F 1 "SMF9.0CA" V 4395 2879 50  0000 L CNN
-F 2 "Diode_SMD:D_SOD-123" H 4350 2600 50  0001 C CNN
-F 3 "" H 4350 2800 50  0001 C CNN
-	1    4350 2800
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	4350 2650 4350 2500
-Connection ~ 4350 2500
-Wire Wire Line
-	4350 2500 4200 2500
-$Comp
-L power:GNDPWR #PWR0119
-U 1 1 617B1979
-P 4350 3100
-F 0 "#PWR0119" H 4350 2900 50  0001 C CNN
-F 1 "GNDPWR" H 4354 2946 50  0000 C CNN
-F 2 "" H 4350 3050 50  0001 C CNN
-F 3 "" H 4350 3050 50  0001 C CNN
-	1    4350 3100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4350 3100 4350 2950
 Text Notes 7350 7500 0    50   ~ 0
 PR-4PP (ai03 guide w/ usb c)
+NoConn ~ 8250 2750
+NoConn ~ 8250 2850
+NoConn ~ 8250 2950
+NoConn ~ 8250 3050
+NoConn ~ 8250 3450
+NoConn ~ 8250 3650
+NoConn ~ 8250 3750
+NoConn ~ 8250 3950
+NoConn ~ 8250 4050
+NoConn ~ 8250 4150
+NoConn ~ 8250 4250
+NoConn ~ 8250 4350
+NoConn ~ 8250 4450
+NoConn ~ 8250 4550
+NoConn ~ 8250 4950
+NoConn ~ 8250 5150
+NoConn ~ 8250 5250
+NoConn ~ 8250 5350
+NoConn ~ 8250 5450
+NoConn ~ 8250 5550
+NoConn ~ 8250 5650
+NoConn ~ 7050 3350
+Wire Wire Line
+	6050 3850 5750 3850
+$Comp
+L Power_Protection:SRV05-4 U3
+U 1 1 6186ECF7
+P 4400 1650
+F 0 "U3" H 4400 2331 50  0000 C CNN
+F 1 "SRV05-4" H 4400 2240 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 5100 1200 50  0001 C CNN
+F 3 "http://www.onsemi.com/pub/Collateral/SRV05-4-D.PDF" H 4400 1650 50  0001 C CNN
+	1    4400 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0116
+U 1 1 61875A86
+P 4700 1150
+F 0 "#PWR0116" H 4700 1000 50  0001 C CNN
+F 1 "+5V" H 4715 1323 50  0000 C CNN
+F 2 "" H 4700 1150 50  0001 C CNN
+F 3 "" H 4700 1150 50  0001 C CNN
+	1    4700 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 1150 4400 1150
+$Comp
+L Device:Fuse_Small F1
+U 1 1 61879CF9
+P 3950 1150
+F 0 "F1" H 3950 1335 50  0000 C CNN
+F 1 "750mA" H 3950 1244 50  0000 C CNN
+F 2 "" H 3950 1150 50  0001 C CNN
+F 3 "~" H 3950 1150 50  0001 C CNN
+	1    3950 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 1150 4400 1150
+Connection ~ 4400 1150
+$Comp
+L power:VBUS #PWR0117
+U 1 1 6187E6F4
+P 3500 1150
+F 0 "#PWR0117" H 3500 1000 50  0001 C CNN
+F 1 "VBUS" H 3515 1323 50  0000 C CNN
+F 2 "" H 3500 1150 50  0001 C CNN
+F 3 "" H 3500 1150 50  0001 C CNN
+	1    3500 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 1150 3850 1150
+Text GLabel 2300 1600 2    50   Input ~ 0
+D-
+Wire Wire Line
+	2050 1600 2200 1600
+Wire Wire Line
+	2050 1500 2200 1500
+Wire Wire Line
+	2200 1500 2200 1600
+Connection ~ 2200 1600
+Wire Wire Line
+	2200 1600 2300 1600
+Text GLabel 2300 1700 2    50   Input ~ 0
+D+
+Wire Wire Line
+	2050 1700 2200 1700
+Wire Wire Line
+	2050 1800 2200 1800
+Wire Wire Line
+	2200 1800 2200 1700
+Connection ~ 2200 1700
+Wire Wire Line
+	2200 1700 2300 1700
+Text GLabel 3700 1550 0    50   Input ~ 0
+D+
+Wire Wire Line
+	3700 1550 3900 1550
+Text GLabel 5150 1750 2    50   Input ~ 0
+D-
+Wire Wire Line
+	5150 1750 4900 1750
+NoConn ~ 4900 1550
+NoConn ~ 3900 1750
+$Comp
+L power:GNDPWR #PWR0118
+U 1 1 618A966E
+P 4400 2300
+F 0 "#PWR0118" H 4400 2100 50  0001 C CNN
+F 1 "GNDPWR" H 4404 2146 50  0000 C CNN
+F 2 "" H 4400 2250 50  0001 C CNN
+F 3 "" H 4400 2250 50  0001 C CNN
+	1    4400 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 2300 4400 2150
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 618B3386
+P 2100 750
+F 0 "#FLG0101" H 2100 825 50  0001 C CNN
+F 1 "PWR_FLAG" H 2100 923 50  0000 C CNN
+F 2 "" H 2100 750 50  0001 C CNN
+F 3 "~" H 2100 750 50  0001 C CNN
+	1    2100 750 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 1000 2100 1000
+Wire Wire Line
+	2100 750  2100 1000
+Connection ~ 2100 1000
+Wire Wire Line
+	2100 1000 2250 1000
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 618BEFCF
+P 1800 2650
+F 0 "#FLG0102" H 1800 2725 50  0001 C CNN
+F 1 "PWR_FLAG" H 1800 2823 50  0000 C CNN
+F 2 "" H 1800 2650 50  0001 C CNN
+F 3 "~" H 1800 2650 50  0001 C CNN
+	1    1800 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 2650 1450 2650
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 618C2D97
+P 7900 2300
+F 0 "#FLG0103" H 7900 2375 50  0001 C CNN
+F 1 "PWR_FLAG" H 7900 2473 50  0000 C CNN
+F 2 "" H 7900 2300 50  0001 C CNN
+F 3 "~" H 7900 2300 50  0001 C CNN
+	1    7900 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 2350 7550 2350
+Connection ~ 7550 2350
+Wire Wire Line
+	7550 2350 7550 2300
+Wire Wire Line
+	7900 2350 7900 2300
+$Comp
+L power:PWR_FLAG #FLG0104
+U 1 1 618CBBDE
+P 6800 5950
+F 0 "#FLG0104" H 6800 6025 50  0001 C CNN
+F 1 "PWR_FLAG" H 6800 6123 50  0000 C CNN
+F 2 "" H 6800 5950 50  0001 C CNN
+F 3 "~" H 6800 5950 50  0001 C CNN
+	1    6800 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 6050 6800 6050
+Wire Wire Line
+	6800 6050 6800 5950
+Connection ~ 7100 6050
 $EndSCHEMATC
