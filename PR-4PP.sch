@@ -660,16 +660,12 @@ Text GLabel 1750 1700 2    50   Input ~ 0
 D-
 Text GLabel 1750 1800 2    50   Input ~ 0
 D+
-Text GLabel 3700 1950 0    50   Input ~ 0
+Text GLabel 5100 2150 2    50   Input ~ 0
+D-
+Text GLabel 3650 1950 0    50   Input ~ 0
 D+
 Wire Wire Line
-	3700 1950 3900 1950
-Text GLabel 5150 2150 2    50   Input ~ 0
-D-
-Wire Wire Line
-	5150 2150 4900 2150
-NoConn ~ 4900 1950
-NoConn ~ 3900 2150
+	3650 1950 3900 1950
 $Comp
 L power:GNDPWR #PWR0118
 U 1 1 618A966E
@@ -789,7 +785,7 @@ U 1 1 6194D03A
 P 1400 1650
 F 0 "USB1" H 1200 2300 60  0000 C CNN
 F 1 "HRO-TYPE-C-31-M-12" V 1000 1600 60  0000 C CNN
-F 2 "" H 1400 1650 60  0001 C CNN
+F 2 "Type-C:HRO-TYPE-C-31-M-12-HandSoldering" H 1400 1650 60  0001 C CNN
 F 3 "" H 1400 1650 60  0001 C CNN
 	1    1400 1650
 	1    0    0    -1  
@@ -884,4 +880,6 @@ F 3 "~" H 1800 1400 50  0001 C CNN
 	1    1800 1400
 	0    1    1    0   
 $EndComp
+Wire Wire Line
+	5100 2150 4900 2150
 $EndSCHEMATC
