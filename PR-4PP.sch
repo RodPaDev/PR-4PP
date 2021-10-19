@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:PR-4PP-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -15,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MCU_Microchip_ATmega:ATmega32U4-AU U1
+L PR-4PP-rescue:ATmega32U4-AU-MCU_Microchip_ATmega U1
 U 1 1 616762F0
 P 7650 4250
 F 0 "U1" H 7650 2361 50  0000 C CNN
